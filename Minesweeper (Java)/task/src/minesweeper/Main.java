@@ -1,6 +1,8 @@
 package minesweeper;
 
 import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
 
 enum CellState {
     MINE ('X'),
@@ -18,32 +20,31 @@ enum CellState {
 }
 
 public class Main {
-    public static final int MINES_COUNT = 10;
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("How many mines do you want on the field? ");
+        int mines = input.nextInt();
+
         CellState[][] field = initializeField();
-        placeMines(field);
+        placeMines(field, mines);
         printField(field);
 
     }
 
-    private static void placeMines(CellState[][] field) {
-        int mines = 0;
-        int index = 0;
-        int skip = 5;
+    private static void placeMines(CellState[][] field, int mines) {
+        int minesPlaced = 0;
 
-        int totalCells = field.length * field[0].length;
+        Random random = new Random();
+        while (minesPlaced < mines) {
+            int x = random.nextInt(9);
+            int y = random.nextInt(9);
 
-        while (mines < MINES_COUNT && index < totalCells) {
-            int row = index / field[0].length;
-            int column = index % field[0].length;
-
-            if (index % skip == 0 && field[row][column] == CellState.SAFE) {
-                field[row][column] = CellState.MINE;
-                mines++;
+            if (field[x][y] == CellState.SAFE) {
+                field[x][y] = CellState.MINE;
+                minesPlaced++;
             }
-
-            index++;
         }
     }
 
@@ -66,4 +67,3 @@ public class Main {
         }
     }
 }
-
