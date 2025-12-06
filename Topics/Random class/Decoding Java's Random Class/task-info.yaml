@@ -1,0 +1,17 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "The program will output a number from the set {0, 1, 2, ..., 49, 50}."
+  - text: The nextInt(50) method call will throw an exception because an argument is
+      provided.
+  - text: The program will always output the same number every time it runs.
+  - text: The program will not compile because the Random class does not exist.
+  - text: "The program will output a random number between 0 and 49, inclusive."
+files:
+  - name: src/Task.java
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/31136#comment
+status: Solved
+record: -1
+local_check: false
