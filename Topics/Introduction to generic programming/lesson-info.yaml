@@ -1,5 +1,10 @@
 content:
-  - Introduction to generic programming
   - Pastry packing optimization
   - Declaring generic classes
   - Correct the program
+  - Introduction to generic programming
+  - Declaring generic classes
+  - Correct the program
+  - Declaring generic classes
+  - Implementing a type-safe Box class and retrieving values
+  - Declaring generic classes - 2
