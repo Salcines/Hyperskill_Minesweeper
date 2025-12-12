@@ -1,0 +1,7 @@
+type: code
+files:
+  - name: src/Main.java
+    visible: true
+    highlight_level: NONE
+feedback_link: https://hyperskill.org/learn/step/2597#comment
+submission_language: java17
