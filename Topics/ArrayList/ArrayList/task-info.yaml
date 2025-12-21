@@ -1,0 +1,5 @@
+type: unsupported
+files:
+  - name: src/Task.java
+    visible: true
+feedback_link: https://hyperskill.org/learn/step/3567#comment
