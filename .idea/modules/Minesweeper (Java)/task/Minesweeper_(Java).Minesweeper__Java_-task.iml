@@ -5,9 +5,8 @@
     <content url="file://$MODULE_DIR$/../../../../Minesweeper (Java)/task">
       <excludeFolder url="file://$MODULE_DIR$/../../../../Minesweeper (Java)/task/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../../Minesweeper (Java)/task/build" />
-      <excludeFolder url="file://$MODULE_DIR$/../../../../Minesweeper (Java)/task/out" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="jbr-21" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

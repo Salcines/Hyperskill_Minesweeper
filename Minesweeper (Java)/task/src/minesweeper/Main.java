@@ -1,6 +1,5 @@
 package minesweeper;
 
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -27,13 +26,25 @@ public class Main {
         System.out.print("How many mines do you want on the field? ");
         int mines = input.nextInt();
 
-        CellState[][] field = initializeField();
+        Cell[][] field = initializeField();
         placeMines(field, mines);
+        showHints(field);
         printField(field);
 
     }
 
-    private static void placeMines(CellState[][] field, int mines) {
+    private static Cell[][] initializeField() {
+        Cell[][] field = new Cell[9][9];
+
+        for (int i = 0; i < field.length; i++) {
+            for (int j = 0; j < field[i].length; j++) {
+                field[i][j] = new Cell(CellState.SAFE);
+            }
+        }
+        return field;
+    }
+
+    private static void placeMines(Cell[][] field, int mines) {
         int minesPlaced = 0;
 
         Random random = new Random();
@@ -41,29 +52,79 @@ public class Main {
             int x = random.nextInt(9);
             int y = random.nextInt(9);
 
-            if (field[x][y] == CellState.SAFE) {
-                field[x][y] = CellState.MINE;
+            if (field[x][y].state == CellState.SAFE) {
+                field[x][y] = new Cell(CellState.MINE);
                 minesPlaced++;
             }
         }
     }
 
-    private static CellState[][] initializeField() {
-        CellState[][] field = new CellState[9][9];
+    private static void showHints(Cell[][] field) {
 
-        for (CellState[] row : field) {
-            Arrays.fill(row, CellState.SAFE);
+        Cell[][] hints = new Cell[9][9];
+
+        for (int i = 0; i < hints.length; i++) {
+            for (int j = 0; j < hints[i].length; j++) {
+                hints[i][j] = new Cell(field[i][j].state);
+            }
         }
-        return field;
+
+        for (Cell[] row : field) {
+            for (Cell cell : row) {
+                if (cell.state == CellState.SAFE) {
+                    cell.counter = 0;
+                }
+            }
+        }
+
+        int[] dx = {-1, -1, -1, 0, 0, 1, 1, 1};
+        int[] dy = {-1, 0, 1, -1, 1, -1, 0, 1};
+
+        for (int i = 0; i < hints.length; i++) {
+            for (int j = 0; j < hints[i].length; j++) {
+                if (hints[i][j].state == CellState.MINE) continue;
+
+                int count = 0;
+
+                for (int k = 0; k < 8; k++) {
+                    int x = i + dx[k];
+                    int y = j + dy[k];
+
+                    if (x >= 0 && x < hints.length && y >= 0
+                            && y < hints[i].length && hints[x][y].state ==
+                            CellState.MINE) {
+
+                        count++;
+                    }
+                }
+
+                field[i][j].counter = count;
+            }
+        }
     }
 
-    private static void printField(CellState[][] field) {
-        for (CellState[] row : field) {
-            for (CellState cell : row) {
-                System.out.print(cell.getSymbol());
+    private static void printField(Cell[][] field) {
+        for (Cell[] row : field) {
+            for (Cell cell : row) {
+                System.out.print(cell);
             }
-
             System.out.println();
         }
+    }
+}
+
+class Cell {
+    CellState state;
+    int counter;
+
+    Cell(CellState state) {
+        this.state = state;
+        this.counter = 0;
+    }
+
+    @Override
+    public String toString() {
+        if (state == CellState.MINE) return String.valueOf(state.getSymbol());
+        return counter > 0 ? String.valueOf(counter) : String.valueOf(state.getSymbol());
     }
 }
