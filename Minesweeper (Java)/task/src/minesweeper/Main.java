@@ -1,11 +1,13 @@
 package minesweeper;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 enum CellState {
     MINE ('X'),
-    SAFE ('.');
+    UNMARKED('.'),
+    MARKED ('*');
 
     private final char symbol;
 
@@ -38,7 +40,7 @@ public class Main {
 
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field[i].length; j++) {
-                field[i][j] = new Cell(CellState.SAFE);
+                field[i][j] = new Cell(CellState.UNMARKED);
             }
         }
         return field;
@@ -52,7 +54,7 @@ public class Main {
             int x = random.nextInt(9);
             int y = random.nextInt(9);
 
-            if (field[x][y].state == CellState.SAFE) {
+            if (field[x][y].state == CellState.UNMARKED) {
                 field[x][y] = new Cell(CellState.MINE);
                 minesPlaced++;
             }
@@ -71,7 +73,7 @@ public class Main {
 
         for (Cell[] row : field) {
             for (Cell cell : row) {
-                if (cell.state == CellState.SAFE) {
+                if (cell.state == CellState.UNMARKED) {
                     cell.counter = 0;
                 }
             }
@@ -93,7 +95,7 @@ public class Main {
                     if (x >= 0 && x < hints.length && y >= 0
                             && y < hints[i].length && hints[x][y].state ==
                             CellState.MINE) {
-
+                        field[x][y].state = CellState.UNMARKED;
                         count++;
                     }
                 }
@@ -104,12 +106,37 @@ public class Main {
     }
 
     private static void printField(Cell[][] field) {
-        for (Cell[] row : field) {
-            for (Cell cell : row) {
-                System.out.print(cell);
+        int rows = field.length;
+        int cols = field[0].length;
+
+        printHeader(cols);
+        printHorizontalBorder(cols);
+
+        for (int i = 0; i < rows; i++) {
+            System.out.printf("%d|", i + 1);
+            for (int j = 0; j < cols; j++) {
+                System.out.print(field[i][j].toString());
             }
-            System.out.println();
+            System.out.println("|");
         }
+
+        printHorizontalBorder(cols);
+    }
+
+    private static void printHeader(int size) {
+        System.out.print(" |");
+        for (int i = 1; i <= size; i++) {
+            System.out.print(i);
+        }
+        System.out.println("|");
+    }
+
+    private static void printHorizontalBorder(int size) {
+        System.out.print("-|");
+        for (int i = 0; i < size; i++) {
+            System.out.print("-");
+        }
+        System.out.println("|");
     }
 }
 

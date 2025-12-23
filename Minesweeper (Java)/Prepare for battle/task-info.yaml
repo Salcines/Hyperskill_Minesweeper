@@ -2,10 +2,6 @@ type: edu
 files:
   - name: src/minesweeper/Main.java
     visible: true
-    learner_created: false
   - name: test/MinesweeperTest.java
     visible: false
-    learner_created: false
 feedback_link: https://hyperskill.org/projects/77/stages/429/implement#comment
-status: Unchecked
-record: -1
