@@ -9,8 +9,11 @@ programming_language: Java
 programming_language_version: 11
 content:
   - Minesweeper (Java)
-  - Topics
+  - Topics (2)
 additional_files:
   - name: build.gradle
+    visible: true
   - name: settings.gradle
-yaml_version: 4
+    visible: true
+mode: Study
+yaml_version: 5
