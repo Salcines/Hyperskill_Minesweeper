@@ -1,0 +1,28 @@
+type: code
+files:
+  - name: src/Main.java
+    visible: true
+    learner_created: false
+  - name: src/Cat.class
+    visible: true
+    is_binary: true
+    learner_created: true
+  - name: src/Dog.class
+    visible: true
+    is_binary: true
+    learner_created: true
+  - name: src/Main.class
+    visible: true
+    is_binary: true
+    learner_created: true
+  - name: src/Animal.class
+    visible: true
+    is_binary: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/41029#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Tue, 17 Mar 2026 21:34:49 UTC"
+record: -1
+submission_language: java17
