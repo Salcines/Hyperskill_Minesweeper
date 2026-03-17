@@ -1,24 +1,7 @@
 package minesweeper;
 
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
-
-enum CellState {
-    MINE ('X'),
-    UNMARKED('.'),
-    MARKED ('*');
-
-    private final char symbol;
-
-    CellState(char symbol) {
-        this.symbol = symbol;
-    }
-
-    public char getSymbol() {
-        return symbol;
-    }
-}
 
 public class Main {
 
@@ -33,16 +16,51 @@ public class Main {
         showHints(field);
         printField(field);
 
+        boolean won = false;
+
+        while (!won) {
+            //printField(field);
+            System.out.print("Set/delete mines marks " +
+                    "(x and y coordinates): ");
+            int x = input.nextInt() - 1;
+            int y = input.nextInt() - 1;
+
+            if (field[y][x].counter == 0) {
+                field[y][x].isMarked =
+                        !field[y][x].isMarked;
+            } else {
+                System.out.println("There is a number here!");
+                continue;
+            }
+
+            won = checkWinConditions(field, mines);
+            printField(field);
+        }
+        System.out.println("Congratulations! You found all mines!");
+
     }
+
+    private static boolean checkWinConditions(Cell[][] field, int mines) {
+        for (Cell[] row : field) {
+            for (Cell cell : row) {
+                if ((!cell.isMine && cell.isMarked) || (cell.isMine && !cell.isMarked)) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
 
     private static Cell[][] initializeField() {
         Cell[][] field = new Cell[9][9];
 
-        for (int i = 0; i < field.length; i++) {
-            for (int j = 0; j < field[i].length; j++) {
-                field[i][j] = new Cell(CellState.UNMARKED);
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                field[i][j] = new Cell();
             }
         }
+
         return field;
     }
 
@@ -54,52 +72,35 @@ public class Main {
             int x = random.nextInt(9);
             int y = random.nextInt(9);
 
-            if (field[x][y].state == CellState.UNMARKED) {
-                field[x][y] = new Cell(CellState.MINE);
+            if (!field[x][y].isMine) {
+                field[x][y].isMine = true;
                 minesPlaced++;
             }
         }
     }
 
     private static void showHints(Cell[][] field) {
-
-        Cell[][] hints = new Cell[9][9];
-
-        for (int i = 0; i < hints.length; i++) {
-            for (int j = 0; j < hints[i].length; j++) {
-                hints[i][j] = new Cell(field[i][j].state);
-            }
-        }
-
-        for (Cell[] row : field) {
-            for (Cell cell : row) {
-                if (cell.state == CellState.UNMARKED) {
-                    cell.counter = 0;
-                }
-            }
-        }
+        int rows = field.length;
+        int cols = field[0].length;
 
         int[] dx = {-1, -1, -1, 0, 0, 1, 1, 1};
         int[] dy = {-1, 0, 1, -1, 1, -1, 0, 1};
 
-        for (int i = 0; i < hints.length; i++) {
-            for (int j = 0; j < hints[i].length; j++) {
-                if (hints[i][j].state == CellState.MINE) continue;
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (field[i][j].isMine) continue;
 
                 int count = 0;
-
                 for (int k = 0; k < 8; k++) {
                     int x = i + dx[k];
                     int y = j + dy[k];
 
-                    if (x >= 0 && x < hints.length && y >= 0
-                            && y < hints[i].length && hints[x][y].state ==
-                            CellState.MINE) {
-                        field[x][y].state = CellState.UNMARKED;
-                        count++;
+                    if (x >= 0 && x < rows && y >= 0 && y < cols) {
+                        if (field[x][y].isMine) {
+                            count++;
+                        }
                     }
                 }
-
                 field[i][j].counter = count;
             }
         }
@@ -141,17 +142,21 @@ public class Main {
 }
 
 class Cell {
-    CellState state;
+    boolean isMine;
+    boolean isMarked;
     int counter;
 
-    Cell(CellState state) {
-        this.state = state;
+    Cell() {
+        this.isMine = false;
+        this.isMarked = false;
         this.counter = 0;
     }
 
     @Override
     public String toString() {
-        if (state == CellState.MINE) return String.valueOf(state.getSymbol());
-        return counter > 0 ? String.valueOf(counter) : String.valueOf(state.getSymbol());
+        if (isMarked) return "*";
+        if (isMine) return ".";
+        if (counter > 0) return String.valueOf(counter);
+        return ".";
     }
 }
