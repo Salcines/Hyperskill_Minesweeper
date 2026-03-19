@@ -1,6 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="17" />
+    <bytecodeTargetLevel target="17">
+      <module name="Minesweeper (Java).Minesweeper_(Java).Topics-ArrayList-ArrayList" target="21" />
+      <module name="Minesweeper (Java).Minesweeper_(Java).Topics-ArrayList-ArrayList.main" target="21" />
+      <module name="Minesweeper (Java).Minesweeper_(Java).Topics-ArrayList-ArrayList.test" target="21" />
+      <module name="Minesweeper (Java).Minesweeper_(Java).Topics-Introduction_to_generic_programming-Pastry_packing_optimization" target="21" />
+      <module name="Minesweeper (Java).Minesweeper_(Java).Topics-Introduction_to_generic_programming-Pastry_packing_optimization.main" target="21" />
+      <module name="Minesweeper (Java).Minesweeper_(Java).Topics-Introduction_to_generic_programming-Pastry_packing_optimization.test" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-build-classes-java" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-build-classes-java.main" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-build-classes-java.test" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-build-generated-sources-annotationProcessor-java" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-build-generated-sources-annotationProcessor-java.main" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-build-generated-sources-annotationProcessor-java.test" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-build-generated-sources-headers-java" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-build-generated-sources-headers-java.main" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-build-generated-sources-headers-java.test" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-build-test-results" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-build-test-results.main" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-build-test-results.test" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-build-tmp" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-build-tmp.main" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-build-tmp.test" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-out" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-out.main" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task-out.test" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task.main" target="21" />
+      <module name="Minesweeper_(Java).Minesweeper__Java_-task.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Adding_items" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Adding_items.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Adding_items.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Concat_positive_numbers" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Concat_positive_numbers.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Concat_positive_numbers.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Creating_list" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Creating_list.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Creating_list.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Find_the_nearest_number" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Find_the_nearest_number.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Find_the_nearest_number.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-How_to_get_an_element_by_the_index" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-How_to_get_an_element_by_the_index.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-How_to_get_an_element_by_the_index.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Output_the_list's_elements" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Output_the_list's_elements.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Output_the_list's_elements.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Powers_of_indexes" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Powers_of_indexes.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Powers_of_indexes.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Removing_items" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Removing_items.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Removing_items.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Taming_the_to-do_tangle" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Taming_the_to-do_tangle.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-Taming_the_to-do_tangle.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-The_behavior_of_methods" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-The_behavior_of_methods.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-The_behavior_of_methods.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-What_ArrayList_can_store" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-What_ArrayList_can_store.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-ArrayList-What_ArrayList_can_store.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Introduction_to_generic_programming-Implementing_a_type-safe_Box_class_and_retrieving_values" target="21" />
+      <module name="Minesweeper_(Java).Topics-Introduction_to_generic_programming-Implementing_a_type-safe_Box_class_and_retrieving_values.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Introduction_to_generic_programming-Implementing_a_type-safe_Box_class_and_retrieving_values.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Introduction_to_generic_programming-Introduction_to_generic_programming" target="21" />
+      <module name="Minesweeper_(Java).Topics-Introduction_to_generic_programming-Introduction_to_generic_programming.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Introduction_to_generic_programming-Introduction_to_generic_programming.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Find_mistake" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Find_mistake.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Find_mistake.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Notification" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Notification.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Notification.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Publication_and_its_subclasses" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Publication_and_its_subclasses.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Publication_and_its_subclasses.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Runtime_method_resolution" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Runtime_method_resolution.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Runtime_method_resolution.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Runtime_polymorphic_behavior" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Runtime_polymorphic_behavior.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Runtime_polymorphic_behavior.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Statements" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Statements.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Statements.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Superclass_method_call" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Superclass_method_call.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Superclass_method_call.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-The_time_of_overloading" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-The_time_of_overloading.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-The_time_of_overloading.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Theory" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Theory.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Theory.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Type_of_polymorphism" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Type_of_polymorphism.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Polymorphism-Type_of_polymorphism.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Choose_a_correct_invocation" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Choose_a_correct_invocation.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Choose_a_correct_invocation.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Decoding_Java's_Random_Class" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Decoding_Java's_Random_Class.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Decoding_Java's_Random_Class.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Generate_random_numbers" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Generate_random_numbers.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Generate_random_numbers.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Lucky_dip__The_mystery_number_game" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Lucky_dip__The_mystery_number_game.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Lucky_dip__The_mystery_number_game.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Random_class" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Random_class.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Random_class.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Random_class__1_" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Random_class__1_.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Random_class__1_.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Theory" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Theory.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Theory.test" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Which_values_can_be_generated" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Which_values_can_be_generated.main" target="21" />
+      <module name="Minesweeper_(Java).Topics-Random_class-Which_values_can_be_generated.test" target="21" />
+      <module name="Minesweeper_(Java).Topics__2_-Comparing_values._Relational_operators-Boys_in_a_sport_class" target="21" />
+      <module name="Minesweeper_(Java).Topics__2_-Comparing_values._Relational_operators-Boys_in_a_sport_class.main" target="21" />
+      <module name="Minesweeper_(Java).Topics__2_-Comparing_values._Relational_operators-Boys_in_a_sport_class.test" target="21" />
+      <module name="Minesweeper_(Java).Topics__3_-Generics_and_Object-Generics_and_Object" target="21" />
+      <module name="Minesweeper_(Java).Topics__3_-Generics_and_Object-Generics_and_Object.main" target="21" />
+      <module name="Minesweeper_(Java).Topics__3_-Generics_and_Object-Generics_and_Object.test" target="21" />
+      <module name="Minesweeper_(Java).Topics__3_-Generics_and_Object-Initialize_an_object_of_a_generic_class" target="21" />
+      <module name="Minesweeper_(Java).Topics__3_-Generics_and_Object-Initialize_an_object_of_a_generic_class.main" target="21" />
+      <module name="Minesweeper_(Java).Topics__3_-Generics_and_Object-Initialize_an_object_of_a_generic_class.test" target="21" />
+      <module name="Minesweeper_(Java).Topics__3_-Object_class-Generating_sounds_based_on_animal_types" target="21" />
+      <module name="Minesweeper_(Java).Topics__3_-Object_class-Generating_sounds_based_on_animal_types.main" target="21" />
+      <module name="Minesweeper_(Java).Topics__3_-Object_class-Generating_sounds_based_on_animal_types.test" target="21" />
+      <module name="Minesweeper_(Java).Topics__3_-Object_class-Object_class" target="21" />
+      <module name="Minesweeper_(Java).Topics__3_-Object_class-Object_class.main" target="21" />
+      <module name="Minesweeper_(Java).Topics__3_-Object_class-Object_class.test" target="21" />
+      <module name="Minesweeper_(Java).Topics__4_-Declaring_functionality_with_interfaces-Area_of_a_circle" target="21" />
+      <module name="Minesweeper_(Java).Topics__4_-Declaring_functionality_with_interfaces-Area_of_a_circle.main" target="21" />
+      <module name="Minesweeper_(Java).Topics__4_-Declaring_functionality_with_interfaces-Area_of_a_circle.test" target="21" />
+      <module name="Minesweeper_(Java).Topics__4_-Declaring_functionality_with_interfaces-Declaring_functionality_with_interfaces" target="21" />
+      <module name="Minesweeper_(Java).Topics__4_-Declaring_functionality_with_interfaces-Declaring_functionality_with_interfaces.main" target="21" />
+      <module name="Minesweeper_(Java).Topics__4_-Declaring_functionality_with_interfaces-Declaring_functionality_with_interfaces.test" target="21" />
+      <module name="Minesweeper_(Java).util" target="21" />
+      <module name="Minesweeper_(Java).util.main" target="21" />
+      <module name="Minesweeper_(Java).util.test" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>
